@@ -1,17 +1,17 @@
 # AnyDL Bot ❤
 
-## This bot can download video or audio from youtube quickly! Can be found in telegram as [@JEAnyDLBot](https://t.me/JEAnyDLBot)
+## This bot can download video or audio from youtube quickly! Can be found in telegram as [@TheBella_Bot](https://t.me/TheBella_Bot)
 
 ### Deploy to Heroku 🏃‍♂
 
-[![Deploy To Heroku](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/ImJanindu/AnyDL-Bot)
+[![Deploy To Heroku](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/OfficialBawwa/Bellayt2Music)
 
 ### Credits:
 
-[Infinity BOTs](https://t.me/Infinity_BOTs)
+[HARP Tech](https://t.me/HARP_Tech)
 
 [Pyrogram Library](https://github.com/pyrogram/pyrogram)
 
 ### Developers:
 
-[@ImJanindu](https://t.me/ImJanindu)
+[@Official_Bawwa](https://t.me/Official_Bawwa)
