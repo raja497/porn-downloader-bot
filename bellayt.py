@@ -24,77 +24,6 @@ YTDL_REGEX = (r"^((?:https?:)?\/\/)"
 s2tw = OpenCC('s2tw.json').convert
 
 
-@Jebot.on_message(filters.command("start"))
-async def start(client, message):
-   if message.chat.type == 'private':
-       await Jebot.send_message(
-               chat_id=message.chat.id,
-               text="""<b>Hey There, I'm AnyDL Bot
-Special thanks to @Infinity_BOTs
-I can download video or audio from Youtube. 
-Hit help button to find out more about how to use me</b>""",   
-                            reply_markup=InlineKeyboardMarkup(
-                                [[
-                                        InlineKeyboardButton(
-                                            "Help", callback_data="help"),
-                                        InlineKeyboardButton(
-                                            "Channel", url="https://t.me/music24x7SL")
-                                    ],[
-                                      InlineKeyboardButton(
-                                            "Source Code", url="https://github.com/charindithjaindu/AnyDL-Bot")
-                                    ]]
-                            ),        
-            disable_web_page_preview=True,        
-            parse_mode="html")
-
-@Jebot.on_message(filters.command("help"))
-async def help(client, message):
-    if message.chat.type == 'private':   
-        await Jebot.send_message(
-               chat_id=message.chat.id,
-               text="""<b>AnyDL Bot Help!
-
-Just send a Youtube url to download it in video or audio format!
-
-~ @Infinity_BOTs</b>""",
-        reply_markup=InlineKeyboardMarkup(
-                                [[
-                                        InlineKeyboardButton(
-                                            "Back", callback_data="start"),
-                                        InlineKeyboardButton(
-                                            "About", callback_data="about"),
-                                  ],[
-                                        InlineKeyboardButton(
-                                            "Source Code", url="https://github.com/ImJanindu/AnyDL-Bot")
-                                    ]]
-                            ),        
-            disable_web_page_preview=True,        
-            parse_mode="html")
-
-@Jebot.on_message(filters.command("about"))
-async def about(client, message):
-    if message.chat.type == 'private':   
-        await Jebot.send_message(
-               chat_id=message.chat.id,
-               text="""<b>About AnyDL Bot!</b>
-
-<b>♞ Developer:</b> <a href="https://t.me/charindith">Jaindu 🇱🇰</a>
-
-<b>♞ Library:</b> <a href="https://github.com/pyrogram/pyrogram">Pyrogram</a>
-
-<b>~This is a fork of AnyDL-Bot by Infinity Bots </b>""",
-     reply_markup=InlineKeyboardMarkup(
-                                [[
-                                        InlineKeyboardButton(
-                                            "Back", callback_data="help"),
-                                        InlineKeyboardButton(
-                                            "Main Source Code by Jason", url="https://github.com/Imjanindu/AnyDL-Bot")
-                                    ]]
-                            ),        
-            disable_web_page_preview=True,        
-            parse_mode="html")
-
-
 # https://docs.pyrogram.org/start/examples/bot_keyboards
 # Reply with inline keyboard
 @Jebot.on_message( filters.text
@@ -165,7 +94,7 @@ async def send_audio(message: Message, info_dict, audio_file):
         get_file_extension_from_url(thumbnail_url)
     # info (s2tw)
     webpage_url = info_dict['webpage_url']
-    title = '@Music24x7SL '+s2tw(info_dict['title'])
+    title = '@HARP_Tech '+s2tw(info_dict['title'])
     caption = f"<b><a href=\"{webpage_url}\">{title}</a></b>"
     duration = int(float(info_dict['duration']))
     performer = s2tw(info_dict['uploader'])
@@ -191,7 +120,7 @@ async def callback_query_ytdl_video(_, callback_query):
             await message.reply_chat_action("typing")
             info_dict = ydl.extract_info(url, download=False)
             # download
-            await callback_query.edit_message_text("**Downloading video...**")
+            await callback_query.edit_message_text("**Downloading video. Please wait...**")
             ydl.process_info(info_dict)
             # upload
             video_file = ydl.prepare_filename(info_dict)
@@ -233,7 +162,7 @@ async def send_video(message: Message, info_dict, video_file):
                     ),
                     InlineKeyboardButton(
                         "Channel 🇱🇰",
-                        url="https://t.me/Music24x7SL"
+                        url="https://t.me/HARP_Tech"
                     )
                 ]
             ]
@@ -295,7 +224,7 @@ async def button(bot, update):
 print(
     """
 Bot Started!
-Join @Infinity_BOTs
+Join @HARP_Texh
 """
 )
 
