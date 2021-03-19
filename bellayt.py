@@ -31,7 +31,7 @@ s2tw = OpenCC('s2tw.json').convert
                    & filters.regex(YTDL_REGEX))
 async def ytdl_with_button(_, message: Message):
     await message.reply_text(
-        "**Choose download type 🤗**",
+        "**Choose download type **",
         reply_markup=InlineKeyboardMarkup(
             [
                 [
@@ -64,7 +64,7 @@ async def callback_query_ytdl_audio(_, callback_query):
             await message.reply_chat_action("typing")
             info_dict = ydl.extract_info(url, download=False)
             # download
-            await callback_query.edit_message_text("**Downloading audio...**")
+            await callback_query.edit_message_text("Downloading audio... Join @HARP_Chat ")
             ydl.process_info(info_dict)
             # upload
             audio_file = ydl.prepare_filename(info_dict)
@@ -224,7 +224,7 @@ async def button(bot, update):
 print(
     """
 Bot Started!
-Join @HARP_Texh
+Join @HARP_Tech
 """
 )
 
