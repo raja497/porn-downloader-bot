@@ -9,7 +9,7 @@ from config import Config
 
 CHANNEL_FORWARD_TO = -1001466248870
 
-Jebot = Client(
+Bellayt = Client(
    "YT Downloader",
    api_id=Config.APP_ID,
    api_hash=Config.API_HASH,
@@ -26,7 +26,7 @@ s2tw = OpenCC('s2tw.json').convert
 
 # https://docs.pyrogram.org/start/examples/bot_keyboards
 # Reply with inline keyboard
-@Jebot.on_message( filters.text
+@Bellayt.on_message( filters.text
                    & ~filters.edited
                    & filters.regex(YTDL_REGEX))
 async def ytdl_with_button(_, message: Message):
@@ -50,7 +50,7 @@ async def ytdl_with_button(_, message: Message):
     )
 
 
-@Jebot.on_callback_query(filters.regex("^ytdl_audio$"))
+@Bellayt.on_callback_query(filters.regex("^ytdl_audio$"))
 async def callback_query_ytdl_audio(_, callback_query):
     try:
         url = callback_query.message.reply_to_message.text
@@ -105,7 +105,7 @@ async def send_audio(message: Message, info_dict, audio_file):
     os.remove(thumbnail_file)
 
 
-@Jebot.on_callback_query(filters.regex("^ytdl_video$"))
+@Bellayt.on_callback_query(filters.regex("^ytdl_video$"))
 async def callback_query_ytdl_video(_, callback_query):
     try:
         # url = callback_query.message.text
@@ -200,7 +200,7 @@ def get_resolution(info_dict):
     return (width, height)
 
 
-@Jebot.on_callback_query(filters.regex("^forward_video$"))
+@Bellayt.on_callback_query(filters.regex("^forward_video$"))
 async def callback_query_forward_video(_, callback_query):
     m_edited = await callback_query.message.edit_reply_markup(None)
     m_cp = await m_edited.copy(CHANNEL_FORWARD_TO,
@@ -208,7 +208,7 @@ async def callback_query_forward_video(_, callback_query):
     await callback_query.answer("Saved!")
     await m_edited.reply(m_cp.link, quote=True)
 
-@Jebot.on_callback_query()
+@Bellayt.on_callback_query()
 async def button(bot, update):
       cb_data = update.data
       if "help" in cb_data:
@@ -228,4 +228,4 @@ Join @HARP_Tech
 """
 )
 
-Jebot.run()
+Bellayt.run()
