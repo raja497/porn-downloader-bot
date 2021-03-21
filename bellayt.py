@@ -208,19 +208,6 @@ async def callback_query_forward_video(_, callback_query):
     await callback_query.answer("Saved!")
     await m_edited.reply(m_cp.link, quote=True)
 
-@Bellayt.on_callback_query()
-async def button(bot, update):
-      cb_data = update.data
-      if "help" in cb_data:
-        await update.message.delete()
-        await help(bot, update.message)
-      elif "about" in cb_data:
-        await update.message.delete()
-        await about(bot, update.message)
-      elif "start" in cb_data:
-        await update.message.delete()
-        await start(bot, update.message)
-
 print(
     """
 Bot Started!
