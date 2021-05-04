@@ -1,16 +1,16 @@
 {
-    "name": "AnyDL Bot",
-    "description": "A bot that can download video or audio from any website.",
+    "name": "PH Downloader Bot",
+    "description": "A bot that can PH videos download video or audio from any porn website.",
     "logo": "https://telegra.ph/file/5aee6774b3c4ab6f0b5ed.jpg",
     "keywords": [
-        "AnyDL",
+        "pornbot",
         "Video Downloader",
         "Telegram Bot",
-        "JE Bots"
+        "porn Bots"
     ],
-    "website": "https://infinityje.com",
-    "repository": "https://github.com/ImJanindu/AnyDL-Bot",
-    "success_url": "https://t.me/Infinity_BOTs",
+    "website": "https://harptech.tk",
+    "repository": "https://github.com/ImJanindu/TG_PH_Downloader_bot",
+    "success_url": "https://t.me/HARP_Tech",
     "env": {
         "TG_BOT_TOKEN": {
             "description": "Your Telegram Bot Token from @BotFather",
