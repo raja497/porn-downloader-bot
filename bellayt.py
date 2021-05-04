@@ -10,7 +10,7 @@ from config import Config
 CHANNEL_FORWARD_TO = -1001466248870
 
 Bellayt = Client(
-   "YT Downloader",
+   "PH Videos Downloader",
    api_id=Config.APP_ID,
    api_hash=Config.API_HASH,
    bot_token=Config.TG_BOT_TOKEN,
@@ -18,7 +18,7 @@ Bellayt = Client(
 
 YTDL_REGEX = (r"^((?:https?:)?\/\/)"
               r"?((?:www|m)\.)"
-              r"?((?:youtube\.com|youtu\.be|xvideos\.com|pornhub\.com"
+              r"?((?:|xvideos\.com|pornhub\.com"
               r"|xhamster\.com|xnxx\.com))"
               r"(\/)([-a-zA-Z0-9()@:%_\+.~#?&//=]*)([\w\-]+)(\S+)?$")
 s2tw = OpenCC('s2tw.json').convert
