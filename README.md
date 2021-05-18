@@ -1,6 +1,6 @@
 #  Bella's  Experimental PH module ❤
 
-## This bot can download video from ph quickly! Can be found in telegram as [@TheBella_Bot](https://t.me/TheBella_Bot)
+## This bot can download video from ph quickly! Can be found in telegram as [@HARP XXX Downloader](https://t.me/HARPXXXBot)
 
 ### Deploy to Heroku
 
@@ -9,9 +9,9 @@
 ### Credits:
 
 [HARP Tech](https://t.me/HARP_Tech)
-
 [Pyrogram Library](https://github.com/pyrogram/pyrogram)
 
 ### Developers:
 
 [@Official_Bawwa](https://t.me/Official_Bawwa)
+[@Anjana-Ma](https://anjanama.me)
