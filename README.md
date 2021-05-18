@@ -9,9 +9,10 @@
 ### Credits:
 
 [HARP Tech](https://t.me/HARP_Tech)
+
 [Pyrogram Library](https://github.com/pyrogram/pyrogram)
 
 ### Developers:
 
-[@Official_Bawwa](https://t.me/Official_Bawwa)
+[@Official_Bawwa](https://t.me/Official_Bawwa) & 
 [@Anjana-Ma](https://anjanama.me)
