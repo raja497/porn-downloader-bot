@@ -7,7 +7,6 @@ from youtube_dl import YoutubeDL
 from opencc import OpenCC
 from config import Config
 
-CHANNEL_FORWARD_TO = -1001466248870
 
 Bellayt = Client(
    "PH Videos Downloader",
