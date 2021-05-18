@@ -48,12 +48,12 @@ async def gstart(_, message: Message):
                    & filters.regex(YTDL_REGEX))
 async def ytdl_with_button(_, message: Message):
     await message.reply_text(
-        "**Choose download type **",
+        "**To confirm your Download, Press the below button **",
         reply_markup=InlineKeyboardMarkup(
             [
                 [
                     InlineKeyboardButton(
-                        "Video 🎬",
+                        "Download Now 🎬",
                         callback_data="ytdl_video"
                     )
                 ]
