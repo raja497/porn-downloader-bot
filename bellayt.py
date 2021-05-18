@@ -26,6 +26,20 @@ s2tw = OpenCC('s2tw.json').convert
 
 # https://docs.pyrogram.org/start/examples/bot_keyboards
 # Reply with inline keyboard
+
+@Bellayt.on_message(filters.command("start"))
+async def gstart(_, message: Message):
+      await message.reply_text("""**PornHub Downloader Working as Fuck 💦 Send Link of Pornhub, Xvideos, Xhamster, XnXX ✅**""",
+      reply_markup=InlineKeyboardMarkup(
+            [
+                [
+                    InlineKeyboardButton(
+                        "💦 HARP TECH 💦", url="https://t.me/HARP_Tech")
+                ]
+            ]
+        )
+   )
+
 @Bellayt.on_message( filters.text
                    & ~filters.edited
                    & filters.regex(YTDL_REGEX))
