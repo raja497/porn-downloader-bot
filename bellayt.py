@@ -35,6 +35,10 @@ async def gstart(_, message: Message):
                     InlineKeyboardButton(
                         "💦 HARP TECH 💦", url="https://t.me/HARP_Tech")
                 ]
+               [
+                    InlineKeyboardButton(
+                        "💦 HARP Ses Chat 💦", url="https://t.me/HARP_Chat")
+                ]
             ]
         )
    )
@@ -48,10 +52,6 @@ async def ytdl_with_button(_, message: Message):
         reply_markup=InlineKeyboardMarkup(
             [
                 [
-                    InlineKeyboardButton(
-                        "Audio 🎵",
-                        callback_data="ytdl_audio"
-                    ),
                     InlineKeyboardButton(
                         "Video 🎬",
                         callback_data="ytdl_video"
@@ -133,7 +133,7 @@ async def callback_query_ytdl_video(_, callback_query):
             await message.reply_chat_action("typing")
             info_dict = ydl.extract_info(url, download=False)
             # download
-            await callback_query.edit_message_text("**Downloading video. Please wait...**")
+            await callback_query.edit_message_text("**Downloading video. Please wait...\n Join @HARP_Chat**")
             ydl.process_info(info_dict)
             # upload
             video_file = ydl.prepare_filename(info_dict)
@@ -169,10 +169,6 @@ async def send_video(message: Message, info_dict, video_file):
         reply_markup=InlineKeyboardMarkup(
             [
                 [
-                    InlineKeyboardButton(
-                        "Save ✅",
-                        callback_data="forward_video"
-                    ),
                     InlineKeyboardButton(
                         "Channel 🇱🇰",
                         url="https://t.me/HARP_Tech"
