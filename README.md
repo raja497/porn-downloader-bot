@@ -1,10 +1,6 @@
 #  Bella's  Experimental PH module ❤
 
-<p align="center">
-  <a href="https://github.com/OfficialBawwa/TG_PH_Downloader_bot">
-    <img src="https://socialify.git.ci/OfficialBawwa/TG_PH_Downloader_bot/image?description=1&descriptionEditable=Bella%27s%20%20Experimental%20PH%20module%20%E2%9D%A4%0A&font=KoHo&forks=1&issues=1&language=1&owner=1&pattern=Overlapping%20Hexagons&pulls=1&stargazers=1&theme=Darkk" alt="Cover Image" width="650">
-  </a>
-</p>
+<img src="https://socialify.git.ci/OfficialBawwa/TG_PH_Downloader_bot/image?description=1&descriptionEditable=Bella%27s%20%20Experimental%20PH%20module%20%E2%9D%A4%0A&font=KoHo&forks=1&issues=1&language=1&owner=1&pattern=Overlapping%20Hexagons&pulls=1&stargazers=1&theme=Dark" alt="TG_PH_Downloader_bot" width="640" height="320" />
 
 ## This bot can download video from ph quickly! Can be found in telegram as [@HARP XXX Downloader](https://t.me/HARPXXXBot)
 
