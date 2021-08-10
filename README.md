@@ -1,9 +1,8 @@
 #  Bella's  Experimental PH module ❤
 
-<h1 align="center">Sri-Lanka-Exam-Results-Telegram-Bot</h3>
 <p align="center">
-  <a href="https://github.com/hirunaofficial/Sri-Lanka-Exam-Results-Telegram-Bot">
-    <img src="https://socialify.git.ci/hirunaofficial/Sri-Lanka-Exam-Results-Telegram-Bot/image?description=1&forks=1&issues=1&language=1&owner=1&pattern=Floating%20Cogs&pulls=1&stargazers=1&theme=Dark" alt="Cover Image" width="650">
+  <a href="https://github.com/OfficialBawwa/TG_PH_Downloader_bot">
+    <img src="https://socialify.git.ci/OfficialBawwa/TG_PH_Downloader_bot/image?description=1&descriptionEditable=Bella%27s%20%20Experimental%20PH%20module%20%E2%9D%A4%0A&font=KoHo&forks=1&issues=1&language=1&owner=1&pattern=Overlapping%20Hexagons&pulls=1&stargazers=1&theme=Darkk" alt="Cover Image" width="650">
   </a>
 </p>
 
