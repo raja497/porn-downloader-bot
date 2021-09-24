@@ -33,7 +33,7 @@ async def gstart(_, message: Message):
             [
                 [
                     InlineKeyboardButton(
-                        "💦 HARP TECH 💦", url="https://t.me/HARP_Tech")
+                        "💦 Update 💦", url="https://t.me/ABOUT_ABHINAS")
                 ]
             ]
         )
@@ -175,7 +175,7 @@ async def send_video(message: Message, info_dict, video_file):
                     ),
                     InlineKeyboardButton(
                         "Channel 🇱🇰",
-                        url="https://t.me/HARP_Tech"
+                        url="https://t.me/ABOUT_ABHINAS"
                     )
                 ]
             ]
