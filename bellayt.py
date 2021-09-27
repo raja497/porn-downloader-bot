@@ -224,7 +224,7 @@ async def callback_query_forward_video(_, callback_query):
 print(
     """
 Bot Started!
-Join @HARP_Tech
+Join @ABOUT_ABHINAS
 """
 )
 
