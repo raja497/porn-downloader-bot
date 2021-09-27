@@ -174,7 +174,7 @@ async def send_video(message: Message, info_dict, video_file):
                         callback_data="forward_video"
                     ),
                     InlineKeyboardButton(
-                        "Channel 🇱🇰",
+                        "Channel 😜",
                         url="https://t.me/ABOUT_ABHINAS"
                     )
                 ]
